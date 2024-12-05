@@ -6,13 +6,19 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+<<<<<<< HEAD
+        "filament/filament": "3.2.57",
+        "laravel/framework": "11.0",
+        "laravel/tinker": "^2.9",
+        "livewire/livewire": "^3.5"
+=======
         "filament/filament": "^3.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9"
+>>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
-        "laravel/pail": "^1.1",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
