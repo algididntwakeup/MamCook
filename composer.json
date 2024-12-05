@@ -6,10 +6,22 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
         "filament/filament": "3.2.57",
         "laravel/framework": "11.0",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.5"
+<<<<<<< HEAD
+=======
+=======
+        "filament/filament": "^3.2",
+        "laravel/framework": "^11.9",
+        "laravel/tinker": "^2.9"
+>>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
