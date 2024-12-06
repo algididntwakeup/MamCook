@@ -7,8 +7,12 @@
 <<<<<<< HEAD
     "content-hash": "3aace4378ec2f98c41a8d4eb8c183393",
 =======
+<<<<<<< HEAD
+    "content-hash": "3aace4378ec2f98c41a8d4eb8c183393",
+=======
     "content-hash": "071932fc77f95477cb014ca9c6d9152d",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -459,6 +463,8 @@
                 }
             ],
             "time": "2024-05-06T09:10:03+00:00"
+<<<<<<< HEAD
+=======
         },
         {
             "name": "danharrin/date-format-converter",
@@ -564,6 +570,7 @@
                 }
             ],
             "time": "2024-05-06T09:10:03+00:00"
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
         },
         {
             "name": "dflydev/dot-access-data",
@@ -642,6 +649,9 @@
         },
         {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "name": "doctrine/cache",
             "version": "2.2.0",
             "source": {
@@ -754,6 +764,8 @@
                 "doctrine/deprecations": "^0.5.3|^1",
                 "doctrine/event-manager": "^1|^2",
                 "php": "^7.4 || ^8.0",
+<<<<<<< HEAD
+=======
 =======
             "name": "doctrine/dbal",
             "version": "4.2.1",
@@ -772,6 +784,7 @@
                 "doctrine/deprecations": "^0.5.3|^1",
                 "php": "^8.1",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "psr/cache": "^1|^2|^3",
                 "psr/log": "^1|^2|^3"
             },
@@ -779,6 +792,9 @@
                 "doctrine/coding-standard": "12.0.0",
                 "fig/log-test": "^1",
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "jetbrains/phpstorm-stubs": "2023.1",
                 "phpstan/phpstan": "1.12.6",
                 "phpstan/phpstan-strict-rules": "^1.6",
@@ -789,6 +805,8 @@
                 "symfony/cache": "^5.4|^6.0|^7.0",
                 "symfony/console": "^4.4|^5.4|^6.0|^7.0",
                 "vimeo/psalm": "4.30.0"
+<<<<<<< HEAD
+=======
 =======
                 "jetbrains/phpstorm-stubs": "2023.2",
                 "phpstan/phpstan": "1.12.6",
@@ -802,6 +820,7 @@
                 "symfony/console": "^5.4|^6.3|^7.0",
                 "vimeo/psalm": "5.25.0"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             },
             "suggest": {
                 "symfony/console": "For helpful console commands such as SQL execution and import of files."
@@ -811,7 +830,13 @@
                 "bin/doctrine-dbal"
             ],
 =======
+<<<<<<< HEAD
+            "bin": [
+                "bin/doctrine-dbal"
+            ],
+=======
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -867,8 +892,12 @@
 <<<<<<< HEAD
                 "source": "https://github.com/doctrine/dbal/tree/3.9.3"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/doctrine/dbal/tree/3.9.3"
+=======
                 "source": "https://github.com/doctrine/dbal/tree/4.2.1"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             },
             "funding": [
                 {
@@ -887,8 +916,12 @@
 <<<<<<< HEAD
             "time": "2024-10-10T17:56:43+00:00"
 =======
+<<<<<<< HEAD
+            "time": "2024-10-10T17:56:43+00:00"
+=======
             "time": "2024-10-10T18:01:27+00:00"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
         },
         {
             "name": "doctrine/deprecations",
@@ -939,6 +972,9 @@
         },
         {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "name": "doctrine/event-manager",
             "version": "2.0.1",
             "source": {
@@ -1030,8 +1066,11 @@
             "time": "2024-05-22T20:47:39+00:00"
         },
         {
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "name": "doctrine/inflector",
             "version": "2.0.10",
             "source": {
@@ -1334,6 +1373,9 @@
         {
             "name": "filament/actions",
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "version": "v3.2.57",
             "source": {
                 "type": "git",
@@ -1344,6 +1386,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filamentphp/actions/zipball/5c5fbb3366f320457545ff84a0e0308009e579c2",
                 "reference": "5c5fbb3366f320457545ff84a0e0308009e579c2",
+<<<<<<< HEAD
+=======
 =======
             "version": "v3.2.127",
             "source": {
@@ -1356,6 +1400,7 @@
                 "url": "https://api.github.com/repos/filamentphp/actions/zipball/f325e315c365cfcea5c9da96662ddea37e3663fc",
                 "reference": "f325e315c365cfcea5c9da96662ddea37e3663fc",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "shasum": ""
             },
             "require": {
@@ -1396,6 +1441,9 @@
                 "source": "https://github.com/filamentphp/filament"
             },
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "time": "2024-03-19T00:27:45+00:00"
         },
         {
@@ -1410,6 +1458,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filamentphp/panels/zipball/ea6d13fe154cece0a74a4d898d07e40bf72aad3c",
                 "reference": "ea6d13fe154cece0a74a4d898d07e40bf72aad3c",
+<<<<<<< HEAD
+=======
 =======
             "time": "2024-11-29T09:30:57+00:00"
         },
@@ -1426,6 +1476,7 @@
                 "url": "https://api.github.com/repos/filamentphp/panels/zipball/4aea767e8c872842b624fe47affe078433111259",
                 "reference": "4aea767e8c872842b624fe47affe078433111259",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "shasum": ""
             },
             "require": {
@@ -1478,6 +1529,9 @@
                 "source": "https://github.com/filamentphp/filament"
             },
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "time": "2024-03-20T10:06:43+00:00"
         },
         {
@@ -1492,6 +1546,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filamentphp/forms/zipball/4f65d7a75809501a58b3d05028ddcbb46f06eb1a",
                 "reference": "4f65d7a75809501a58b3d05028ddcbb46f06eb1a",
+<<<<<<< HEAD
+=======
 =======
             "time": "2024-11-29T09:30:58+00:00"
         },
@@ -1508,6 +1564,7 @@
                 "url": "https://api.github.com/repos/filamentphp/forms/zipball/c78071f1aabb63a0d9bf74268005d3294b61dc2a",
                 "reference": "c78071f1aabb63a0d9bf74268005d3294b61dc2a",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "shasum": ""
             },
             "require": {
@@ -1551,6 +1608,9 @@
                 "source": "https://github.com/filamentphp/filament"
             },
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "time": "2024-03-20T10:06:36+00:00"
         },
         {
@@ -1565,6 +1625,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filamentphp/infolists/zipball/72217e2ae055bfea51feb3351e00f269b188796d",
                 "reference": "72217e2ae055bfea51feb3351e00f269b188796d",
+<<<<<<< HEAD
+=======
 =======
             "time": "2024-11-29T09:30:53+00:00"
         },
@@ -1581,6 +1643,7 @@
                 "url": "https://api.github.com/repos/filamentphp/infolists/zipball/e655ac3900ab2109022aa0243cfb4126729ef431",
                 "reference": "e655ac3900ab2109022aa0243cfb4126729ef431",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "shasum": ""
             },
             "require": {
@@ -1619,6 +1682,9 @@
                 "source": "https://github.com/filamentphp/filament"
             },
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "time": "2024-03-14T10:54:02+00:00"
         },
         {
@@ -1633,6 +1699,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filamentphp/notifications/zipball/f9a790ee2d5103ea87c88e6d545ea6ceb770cbe5",
                 "reference": "f9a790ee2d5103ea87c88e6d545ea6ceb770cbe5",
+<<<<<<< HEAD
+=======
 =======
             "time": "2024-11-29T09:30:56+00:00"
         },
@@ -1649,6 +1717,7 @@
                 "url": "https://api.github.com/repos/filamentphp/notifications/zipball/c19df07c801c5550de0d30957c5a316f53019533",
                 "reference": "c19df07c801c5550de0d30957c5a316f53019533",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "shasum": ""
             },
             "require": {
@@ -1688,6 +1757,9 @@
                 "source": "https://github.com/filamentphp/filament"
             },
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "time": "2024-03-19T00:28:12+00:00"
         },
         {
@@ -1707,6 +1779,8 @@
             "require": {
                 "blade-ui-kit/blade-heroicons": "^2.2.1",
                 "doctrine/dbal": "^3.2",
+<<<<<<< HEAD
+=======
 =======
             "time": "2024-10-23T07:36:14+00:00"
         },
@@ -1728,6 +1802,7 @@
                 "blade-ui-kit/blade-heroicons": "^2.5",
                 "doctrine/dbal": "^3.2|^4.0",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "ext-intl": "*",
                 "illuminate/contracts": "^10.45|^11.0",
                 "illuminate/support": "^10.45|^11.0",
@@ -1735,9 +1810,13 @@
 <<<<<<< HEAD
                 "livewire/livewire": "^3.4.9",
 =======
+<<<<<<< HEAD
+                "livewire/livewire": "^3.4.9",
+=======
                 "kirschbaum-development/eloquent-power-joins": "^3.0|^4.0",
                 "livewire/livewire": "3.5.12",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "php": "^8.1",
                 "ryangjchandler/blade-capture-directive": "^0.2|^0.3|^1.0",
                 "spatie/color": "^1.5",
@@ -1746,9 +1825,13 @@
 <<<<<<< HEAD
                 "symfony/html-sanitizer": "^6.1"
 =======
+<<<<<<< HEAD
+                "symfony/html-sanitizer": "^6.1"
+=======
                 "symfony/console": "^6.0|^7.0",
                 "symfony/html-sanitizer": "^6.1|^7.0"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             },
             "type": "library",
             "extra": {
@@ -1777,6 +1860,9 @@
                 "source": "https://github.com/filamentphp/filament"
             },
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "time": "2024-03-14T14:14:06+00:00"
         },
         {
@@ -1791,6 +1877,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filamentphp/tables/zipball/0b57a67224d06a6e6c83b131fad68a5c71bf03a2",
                 "reference": "0b57a67224d06a6e6c83b131fad68a5c71bf03a2",
+<<<<<<< HEAD
+=======
 =======
             "time": "2024-11-29T09:31:13+00:00"
         },
@@ -1807,6 +1895,7 @@
                 "url": "https://api.github.com/repos/filamentphp/tables/zipball/c287a68e084c96c3f2991eaddf1d6b5159af5147",
                 "reference": "c287a68e084c96c3f2991eaddf1d6b5159af5147",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "shasum": ""
             },
             "require": {
@@ -1822,7 +1911,11 @@
 <<<<<<< HEAD
                 "kirschbaum-development/eloquent-power-joins": "^3.0",
 =======
+<<<<<<< HEAD
+                "kirschbaum-development/eloquent-power-joins": "^3.0",
+=======
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "php": "^8.1",
                 "spatie/laravel-package-tools": "^1.9"
             },
@@ -1850,6 +1943,9 @@
                 "source": "https://github.com/filamentphp/filament"
             },
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "time": "2024-03-20T10:07:09+00:00"
         },
         {
@@ -1864,6 +1960,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filamentphp/widgets/zipball/38a011b9a556a2786028eb80aa135e171569d2af",
                 "reference": "38a011b9a556a2786028eb80aa135e171569d2af",
+<<<<<<< HEAD
+=======
 =======
             "time": "2024-11-30T09:21:26+00:00"
         },
@@ -1880,6 +1978,7 @@
                 "url": "https://api.github.com/repos/filamentphp/widgets/zipball/6de1c84d71168fd1c6a5b1ae1e1b4ec5ee4b6f55",
                 "reference": "6de1c84d71168fd1c6a5b1ae1e1b4ec5ee4b6f55",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "shasum": ""
             },
             "require": {
@@ -1913,8 +2012,12 @@
 <<<<<<< HEAD
             "time": "2024-03-14T10:54:33+00:00"
 =======
+<<<<<<< HEAD
+            "time": "2024-03-14T10:54:33+00:00"
+=======
             "time": "2024-11-27T16:52:29+00:00"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
         },
         {
             "name": "fruitcake/php-cors",
@@ -2463,6 +2566,9 @@
         {
             "name": "kirschbaum-development/eloquent-power-joins",
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "version": "3.5.8",
             "source": {
                 "type": "git",
@@ -2484,6 +2590,8 @@
                 "laravel/legacy-factories": "^1.0@dev",
                 "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0|^8.0|^9.0",
                 "phpunit/phpunit": "^8.0|^9.0|^10.0"
+<<<<<<< HEAD
+=======
 =======
             "version": "4.0.1",
             "source": {
@@ -2508,6 +2616,7 @@
                 "orchestra/testbench": "^8.0|^9.0",
                 "phpunit/phpunit": "^10.0"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             },
             "type": "library",
             "extra": {
@@ -2544,6 +2653,9 @@
             "support": {
                 "issues": "https://github.com/kirschbaum-development/eloquent-power-joins/issues",
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "source": "https://github.com/kirschbaum-development/eloquent-power-joins/tree/3.5.8"
             },
             "time": "2024-09-10T10:28:05+00:00"
@@ -2560,6 +2672,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/6089f679d6d29e6071a6448ed5e96de02e57fedb",
                 "reference": "6089f679d6d29e6071a6448ed5e96de02e57fedb",
+<<<<<<< HEAD
+=======
 =======
                 "source": "https://github.com/kirschbaum-development/eloquent-power-joins/tree/4.0.1"
             },
@@ -2578,6 +2692,7 @@
                 "url": "https://api.github.com/repos/laravel/framework/zipball/865da6d73dd353f07a7bcbd778c55966a620121f",
                 "reference": "865da6d73dd353f07a7bcbd778c55966a620121f",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "shasum": ""
             },
             "require": {
@@ -2597,6 +2712,9 @@
                 "guzzlehttp/guzzle": "^7.8.2",
                 "guzzlehttp/uri-template": "^1.0",
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "laravel/prompts": "^0.1.15",
                 "laravel/serializable-closure": "^1.3",
 =======
@@ -2689,6 +2807,9 @@
                 "mockery/mockery": "^1.6.10",
                 "nyholm/psr7": "^1.2",
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "orchestra/testbench-core": "^9.0",
                 "pda/pheanstalk": "^5.0",
                 "phpstan/phpstan": "^1.4.7",
@@ -2789,8 +2910,12 @@
 <<<<<<< HEAD
             "time": "2024-03-12T13:43:31+00:00"
 =======
+<<<<<<< HEAD
+            "time": "2024-03-12T13:43:31+00:00"
+=======
             "time": "2024-11-27T15:43:57+00:00"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
         },
         {
             "name": "laravel/prompts",
@@ -2853,6 +2978,9 @@
         {
             "name": "laravel/serializable-closure",
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "version": "v1.3.7",
             "source": {
                 "type": "git",
@@ -2863,6 +2991,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/4f48ade902b94323ca3be7646db16209ec76be3d",
                 "reference": "4f48ade902b94323ca3be7646db16209ec76be3d",
+<<<<<<< HEAD
+=======
 =======
             "version": "v2.0.0",
             "source": {
@@ -2875,6 +3005,7 @@
                 "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/0d8d3d8086984996df86596a86dea60398093a81",
                 "reference": "0d8d3d8086984996df86596a86dea60398093a81",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "shasum": ""
             },
             "require": {
@@ -2925,8 +3056,12 @@
 <<<<<<< HEAD
             "time": "2024-11-14T18:34:49+00:00"
 =======
+<<<<<<< HEAD
+            "time": "2024-11-14T18:34:49+00:00"
+=======
             "time": "2024-11-19T01:38:44+00:00"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
         },
         {
             "name": "laravel/tinker",
@@ -3634,6 +3769,9 @@
         {
             "name": "livewire/livewire",
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "version": "v3.5.16",
             "source": {
                 "type": "git",
@@ -3644,6 +3782,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/livewire/livewire/zipball/0b842088d716cadaf9d94fc4f096bc688db29d65",
                 "reference": "0b842088d716cadaf9d94fc4f096bc688db29d65",
+<<<<<<< HEAD
+=======
 =======
             "version": "v3.5.12",
             "source": {
@@ -3656,6 +3796,7 @@
                 "url": "https://api.github.com/repos/livewire/livewire/zipball/3c8d1f9d7d9098aaea663093ae168f2d5d2ae73d",
                 "reference": "3c8d1f9d7d9098aaea663093ae168f2d5d2ae73d",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "shasum": ""
             },
             "require": {
@@ -3713,8 +3854,12 @@
 <<<<<<< HEAD
                 "source": "https://github.com/livewire/livewire/tree/v3.5.16"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/livewire/livewire/tree/v3.5.16"
+=======
                 "source": "https://github.com/livewire/livewire/tree/v3.5.12"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             },
             "funding": [
                 {
@@ -3725,8 +3870,12 @@
 <<<<<<< HEAD
             "time": "2024-12-02T15:57:58+00:00"
 =======
+<<<<<<< HEAD
+            "time": "2024-12-02T15:57:58+00:00"
+=======
             "time": "2024-10-15T19:35:06+00:00"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
         },
         {
             "name": "masterminds/html5",
@@ -6083,6 +6232,9 @@
         {
             "name": "symfony/html-sanitizer",
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             "version": "v6.4.13",
             "source": {
                 "type": "git",
@@ -6093,6 +6245,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/881f62f73376bcd97cdfebec4069338a16e2b76c",
                 "reference": "881f62f73376bcd97cdfebec4069338a16e2b76c",
+<<<<<<< HEAD
+=======
 =======
             "version": "v7.2.0",
             "source": {
@@ -6105,6 +6259,7 @@
                 "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/1d23de45af5e8508441ff5f82bb493e83cdcbba4",
                 "reference": "1d23de45af5e8508441ff5f82bb493e83cdcbba4",
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
                 "shasum": ""
             },
             "require": {
@@ -6114,8 +6269,12 @@
 <<<<<<< HEAD
                 "php": ">=8.1"
 =======
+<<<<<<< HEAD
+                "php": ">=8.1"
+=======
                 "php": ">=8.2"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             },
             "type": "library",
             "autoload": {
@@ -6151,8 +6310,12 @@
 <<<<<<< HEAD
                 "source": "https://github.com/symfony/html-sanitizer/tree/v6.4.13"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/symfony/html-sanitizer/tree/v6.4.13"
+=======
                 "source": "https://github.com/symfony/html-sanitizer/tree/v7.2.0"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
             },
             "funding": [
                 {
@@ -6171,8 +6334,12 @@
 <<<<<<< HEAD
             "time": "2024-09-25T14:18:03+00:00"
 =======
+<<<<<<< HEAD
+            "time": "2024-09-25T14:18:03+00:00"
+=======
             "time": "2024-09-25T14:21:43+00:00"
 >>>>>>> ee9ec4928baf30d0f138775d74881b723069b04c
+>>>>>>> bc5fe969792d70b128fabf3c395d974c98f25253
         },
         {
             "name": "symfony/http-foundation",
