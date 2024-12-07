@@ -137,8 +137,15 @@ export default function Browse() {
             </a>
             </div>
             <div className="swiper w-full mt-3">
-            <div className="swiper-wrapper">
-                <div className="swiper-slide !w-fit">
+            <Swiper
+        className="w-full mt-3"
+        direction='horizontal'
+        spaceBetween={16}
+        slidesPerView="auto"
+        slidesOffsetBefore={20}
+        slidesOffsetAfter={20}
+        >
+                <SwiperSlide className=" !w-fit">
                 <a href="details.html" className="card">
                     <div className="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
                     <img
@@ -169,8 +176,8 @@ export default function Browse() {
                     </div>
                     </div>
                 </a>
-                </div>
-                <div className="swiper-slide !w-fit">
+                </SwiperSlide>
+                <SwiperSlide className=" !w-fit">
                 <a href="details.html" className="card">
                     <div className="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
                     <img
@@ -201,8 +208,8 @@ export default function Browse() {
                     </div>
                     </div>
                 </a>
-                </div>
-                <div className="swiper-slide !w-fit">
+                </SwiperSlide>
+                <SwiperSlide className=" !w-fit">
                 <a href="details.html" className="card">
                     <div className="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
                     <img
@@ -233,8 +240,8 @@ export default function Browse() {
                     </div>
                     </div>
                 </a>
-                </div>
-            </div>
+                </SwiperSlide>
+            </Swiper>
             </div>
         </section>
         <div
