@@ -16,12 +16,12 @@ export default function FeaturedRecipe() {
                 alt="star"
             />
             <span className="font-semibold text-xs leading-[18px] text-white">
-                4.8
+                4.5
             </span>
             </div>
             <div className="flex flex-col gap-[6px]">
             <h3 className="font-bold text-xl leading-[28px] text-white">
-                Burger Tebal Makin Hot
+                Texas Style Burger
             </h3>
             <p className="font-semibold text-xs leading-[18px] text-[#FF4C1C]">
                 Bakery
