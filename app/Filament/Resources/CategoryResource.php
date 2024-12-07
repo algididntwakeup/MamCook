@@ -22,8 +22,18 @@ class CategoryResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-                //
+
+            ->schema(
+                [
+                    //
+                Forms\Components\TextInput::make ( 'name' )
+                ->helperText('Gunakan nama data dengan tepat.')
+                ->required()
+                ->maxLength (255) ,
+
+                Forms\Components\FileUpload::make('icon')
+                ->image()
+                ->required(),
             ]);
     }
 
@@ -32,6 +42,10 @@ class CategoryResource extends Resource
         return $table
             ->columns([
                 //
+                Tables\Columns\TextColumn::make('name')
+                ->searchable(),
+
+                Tables\Columns\ImageColumn::make('icon'),
             ])
             ->filters([
                 //
