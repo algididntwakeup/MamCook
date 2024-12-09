@@ -24,6 +24,16 @@ class IngredientResource extends Resource
         return $form
             ->schema([
                 //
+                Forms\Components\TextInput::make('name')
+                ->helperText('Gunakan nama data dengan tepat')
+                ->required()
+                ->maxLength(255),
+
+                Forms\Components\FileUpload::make('photo')
+                ->disk('public') // Gunakan disk public
+                ->directory('icons') // Opsional: simpan file di folder icons
+                ->image()
+                ->required(),
             ]);
     }
 
@@ -32,6 +42,10 @@ class IngredientResource extends Resource
         return $table
             ->columns([
                 //
+                Tables\Columns\TextColumn::make('name')
+                ->searchable(),
+
+                Tables\Columns\ImageColumn::make('photo'),
             ])
             ->filters([
                 //
