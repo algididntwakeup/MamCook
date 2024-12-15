@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import CategoryCard from "../components/CategoryCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Category } from "../types/type";
 
 
 export default function CategoryWrapper() {
@@ -11,7 +12,7 @@ export default function CategoryWrapper() {
     const [error, setError] = useState<string | null>(null);
     
     useEffect(() => {
-      axios.get('')
+      axios.get('http://127.0.0.1:8000/api/categories')
         .then(response => {
           setCategories(response.data.data);
           setLoading(false);
@@ -39,8 +40,8 @@ export default function CategoryWrapper() {
         slidesOffsetAfter={20}
         >
                 {categories.map((category) => ( 
-                <SwiperSlide className=" !w-fit pb-[30px]">
-                    <CategoryCard/>
+                <SwiperSlide key={category.id} className=" !w-fit pb-[30px]">
+                    <CategoryCard category={category}/>
                 </SwiperSlide>
                 ))}
             </Swiper>
