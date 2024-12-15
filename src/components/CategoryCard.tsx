@@ -14,7 +14,7 @@ export default function CategoryCard({category} : CategoryCardProps) {
                             />
                     </div>
                     {/* <Link to="/recipe/bakery"> */}
-                        <h3 className="font-semibold text-sm leading-[21px]">Bakery</h3>
+                        <h3 className="font-semibold text-sm leading-[21px]"></h3>
                         {category.name}
                     {/* </Link> */}
                 </div>
