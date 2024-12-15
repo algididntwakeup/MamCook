@@ -53,7 +53,7 @@ export default function BrowseFeaturedRecipesWrapper() {
 
                 {recipes.map((recipe) => (
                 <SwiperSlide key={recipe.id} className=" !w-fit">
-                    <FeaturedRecipe/>
+                    <FeaturedRecipe recipe={recipe}/>
                 </SwiperSlide>  
 
                 ))}
