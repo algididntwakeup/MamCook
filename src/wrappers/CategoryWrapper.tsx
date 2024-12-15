@@ -23,7 +23,13 @@ export default function CategoryWrapper() {
         });
     }, []);
     
-
+    if (loading) {  
+        return <p>Loading...</p>;  
+    }  
+    
+    if (error) {  
+        return <p>Error loading jobs: {error}</p>;  
+    }
 
     return (
     <section id="Categories" className="mt-[30px]">

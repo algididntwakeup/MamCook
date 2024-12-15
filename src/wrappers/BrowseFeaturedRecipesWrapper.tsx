@@ -1,8 +1,36 @@
 import { Swiper,SwiperSlide } from "swiper/react";
 import FeaturedRecipe from "../components/FeaturedRecipe";
+import { useEffect, useState } from "react";
+import { Recipe } from "../types/type";
+import axios from "axios";
 
 export default function BrowseFeaturedRecipesWrapper() {
-  return (
+    
+    const [ recipes, setRecipes ] = useState<Recipe[]>([]);  
+    const [ loading, setLoading ] = useState(true);  
+    const [ error, setError ] = useState<string | null>(null);  
+    
+    useEffect(() => {  
+        axios.get('http://127.0.0.1:8000/api/recipes')  
+        .then(response => {  
+            setRecipes(response.data.data);  
+            setLoading(false);  
+        })  
+        .catch(error => {  
+            setError(error);  
+            setLoading(false);  
+        });  
+    }, []);
+    
+    if (loading) {  
+        return <p>Loading...</p>;  
+    }  
+    
+    if (error) {  
+        return <p>Error loading jobs: {error}</p>;  
+    }
+
+    return (
     <section id="MadeByPeople">
             <div className="flex items-center justify-between px-5">
             <h2 className="font-bold">Made by People</h2>
@@ -22,19 +50,13 @@ export default function BrowseFeaturedRecipesWrapper() {
         slidesOffsetBefore={20}
         slidesOffsetAfter={20}
         >
-                <SwiperSlide className=" !w-fit">
-                <FeaturedRecipe/>
-                </SwiperSlide>
-                <SwiperSlide className=" !w-fit">
-                <FeaturedRecipe/>
-                </SwiperSlide>
-                <SwiperSlide className=" !w-fit">
-                <FeaturedRecipe/>
-                </SwiperSlide>
-                <SwiperSlide className=" !w-fit">
-                <FeaturedRecipe/>
-                </SwiperSlide>
-               
+
+                {recipes.map((recipe) => (
+                <SwiperSlide key={recipe.id} className=" !w-fit">
+                    <FeaturedRecipe/>
+                </SwiperSlide>  
+
+                ))}
             </Swiper>
             </div>
         </section>

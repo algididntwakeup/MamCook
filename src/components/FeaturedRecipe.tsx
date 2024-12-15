@@ -1,10 +1,14 @@
-export default function FeaturedRecipe() {
+import { Link } from "react-router-dom";
+import { Recipe } from "../types/type";
+
+export default function FeaturedRecipe({recipe} : FeaturedRecipeProps) {
+
+    const baseURL = "http://127.0.0.1:8000/storage/"; 
+
     return(
         <a href="details.html" className="card">
         <div className="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
-        <img
-            src="/assets/images/thumbnails/thumbnail-2.png"
-            className="absolute w-full h-full object-cover"
+        <img src={`${baseURL}/${recipe.thumbnail}`} className="absolute w-full h-full object-cover"
             alt="thumbnails"
         />
         <div className="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)] z-10" />
@@ -21,14 +25,18 @@ export default function FeaturedRecipe() {
             </div>
             <div className="flex flex-col gap-[6px]">
             <h3 className="font-bold text-xl leading-[28px] text-white">
-                Texas Style Burger
+                {recipe.name}
             </h3>
             <p className="font-semibold text-xs leading-[18px] text-[#FF4C1C]">
-                Bakery
+                {recipe.category.name}
             </p>
             </div>
         </div>
         </div>
     </a>
     );
+}
+
+interface FeaturedRecipeProps {
+    recipe: Recipe
 }
