@@ -38,20 +38,11 @@ export default function CategoryWrapper() {
         slidesOffsetBefore={20}
         slidesOffsetAfter={20}
         >
+                {categories.map((category) => ( 
                 <SwiperSlide className=" !w-fit pb-[30px]">
                     <CategoryCard/>
                 </SwiperSlide>
-                <SwiperSlide className=" !w-fit pb-[30px]">
-                    <CategoryCard/>
-                </SwiperSlide>
-                <SwiperSlide className=" !w-fit pb-[30px]">
-                    <CategoryCard/>
-                </SwiperSlide>
-                <SwiperSlide className=" !w-fit pb-[30px]">
-                    <CategoryCard/>
-                </SwiperSlide>
-                
-
+                ))}
             </Swiper>
             </div>
         </section>
