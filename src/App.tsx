@@ -3,7 +3,7 @@ import Browse from './pages/Browse';
 // import LoginPage from "./pages/LoginPage";
 // import RecipeDetails from './pages/RecipeDetails';
 import CategoryDetails from './pages/CategoryDetails';
-// import SearchDetails from './pages/SearchDetails';
+import SearchDetails from './pages/SearchDetails';
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
         <Route path="/" element={<Browse />} />
        
         {/* <Route path="/login" element={<LoginPage />} />? */}
-        {/* <Route path="/search" element={<SearchDetails />} />
-        <Route path="/recipe/:slug" element={<RecipeDetails />} /> */}
+        <Route path="/search" element={<SearchDetails />} />
+        {/* <Route path="/recipe/:slug" element={<RecipeDetails />} />  */}
         <Route path="/category/:slug" element={<CategoryDetails />} />
       </Routes>
     </Router>
