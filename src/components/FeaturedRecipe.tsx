@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Recipe } from "../types/type";
 
 export default function FeaturedRecipe({recipe} : FeaturedRecipeProps) {
@@ -8,8 +7,9 @@ export default function FeaturedRecipe({recipe} : FeaturedRecipeProps) {
     return(
         <a href="details.html" className="card">
         <div className="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
-        <img src={`${baseURL}/${recipe.thumbnail}`} className="absolute w-full h-full object-cover"
-            alt="thumbnails"
+        <img src={`${baseURL}/${recipe.thumbnail}`} 
+        className="absolute w-full h-full object-cover"
+        alt="thumbnails"
         />
         <div className="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)] z-10" />
         <div className="relative flex flex-col h-full justify-between p-5 z-20">
