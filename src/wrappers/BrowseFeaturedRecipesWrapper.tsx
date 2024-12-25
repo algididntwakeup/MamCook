@@ -1,5 +1,5 @@
 import { Swiper,SwiperSlide } from "swiper/react";
-import FeaturedRecipe from "../components/FeaturedRecipe";
+import FeaturedRecipe from "../components/FeaturedRecipeCard";
 import { useEffect, useState } from "react";
 import { Recipe } from "../types/type";
 import axios from "axios";
