@@ -3,7 +3,7 @@ import Browse from './pages/Browse';
 // import LoginPage from "./pages/LoginPage";
 // import RecipeDetails from './pages/RecipeDetails';
 import CategoryDetails from './pages/CategoryDetails';
-import CariDetails from './pages/CariDetails';
+import CariDetails from './pages/SearchDetails';
 
 function App() {
   return (
