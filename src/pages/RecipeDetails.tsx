@@ -1,4 +1,16 @@
+import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 export default function RecipeDetails() {
+
+    const [activeTab, setActiveTab] = useState("ingredients");  
+
+        const handleTabClick = (tab: string) => {  
+            setActiveTab(tab);  
+        };
+
+
+
     return(
         <>
   <nav className="absolute top-0 flex w-full max-w-[640px] items-center justify-between px-5 mt-[30px] z-20">
@@ -27,7 +39,12 @@ export default function RecipeDetails() {
   >
     <div className="swiper">
       <div className="swiper-wrapper">
-        <div className="swiper-slide">
+      <Swiper
+        className="w-full"
+        direction='horizontal'
+        slidesPerView="auto"
+        >
+        <SwiperSlide>
           <div className="relative w-full h-full flex shrink-0">
             <div className="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)] z-10" />
             <img
@@ -36,8 +53,8 @@ export default function RecipeDetails() {
               alt="thumbnail"
             />
           </div>
-        </div>
-        <div className="swiper-slide">
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="relative w-full h-full flex shrink-0">
             <div className="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)] z-10" />
             <img
@@ -46,8 +63,8 @@ export default function RecipeDetails() {
               alt="thumbnail"
             />
           </div>
-        </div>
-        <div className="swiper-slide">
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="relative w-full h-full flex shrink-0">
             <div className="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)] z-10" />
             <img
@@ -56,7 +73,8 @@ export default function RecipeDetails() {
               alt="thumbnail"
             />
           </div>
-        </div>
+        </SwiperSlide>
+        </Swiper>
       </div>
     </div>
     <div className="absolute bottom-0 w-full flex flex-col gap-5 z-20">
@@ -147,7 +165,15 @@ export default function RecipeDetails() {
         data-tabs-active-classes="shadow-[0_10px_20px_0_#FF4C1C80] !bg-[#FF4C1C]"
         data-tabs-inactive-classes="!bg-black"
       >
-        <div className="swiper-slide !w-fit pb-[26px]">
+         <Swiper
+        className="w-full"
+        direction='horizontal'
+        spaceBetween={16}
+        slidesPerView="auto"
+        slidesOffsetBefore={20}
+        slidesOffsetAfter={20}
+        >
+        <SwiperSlide className="!w-fit pb-[26px]">
           <button
             className="flex items-center gap-[10px] py-3 px-4 rounded-full font-semibold !text-white bg-black transition-all duration-300 hover:shadow-[0_10px_20px_0_#FF4C1C80] hover:!bg-[#FF4C1C]"
             id="ingredients-tab"
@@ -164,8 +190,8 @@ export default function RecipeDetails() {
             />
             <h3>Ingredients</h3>
           </button>
-        </div>
-        <div className="swiper-slide !w-fit pb-[26px]">
+        </SwiperSlide>
+        <SwiperSlide className="!w-fit pb-[26px]">
           <button
             className="flex items-center gap-[10px] py-3 px-4 rounded-full font-semibold !text-white bg-black transition-all duration-300 hover:shadow-[0_10px_20px_0_#FF4C1C80] hover:!bg-[#FF4C1C]"
             id="tutorials-tab"
@@ -182,8 +208,8 @@ export default function RecipeDetails() {
             />
             <h3>Tutorials</h3>
           </button>
-        </div>
-        <div className="swiper-slide !w-fit pb-[26px]">
+        </SwiperSlide>
+        <SwiperSlide className="!w-fit pb-[26px]">
           <button
             className="flex items-center gap-[10px] py-3 px-4 rounded-full font-semibold !text-white bg-black transition-all duration-300 hover:shadow-[0_10px_20px_0_#FF4C1C80] hover:!bg-[#FF4C1C]"
             id="reviews-tab"
@@ -200,7 +226,8 @@ export default function RecipeDetails() {
             />
             <h3>Reviews</h3>
           </button>
-        </div>
+        </SwiperSlide>
+        </Swiper>
       </div>
     </div>
     <div id="default-tab-content">
