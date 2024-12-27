@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import IngredientsCard from "../components/IngredientCard";
 
 export default function RecipeDetails() {
 
@@ -182,6 +183,7 @@ export default function RecipeDetails() {
             role="tab"
             aria-controls="ingredients"
             aria-selected="true"
+            onClick={() => handleTabClick("ingredients")}
           >
             <img
               src="/assets/images/icons/coffee-white.svg"
@@ -200,6 +202,7 @@ export default function RecipeDetails() {
             role="tab"
             aria-controls="tutorials"
             aria-selected="false"
+            onClick={() => handleTabClick("tutorials")}
           >
             <img
               src="/assets/images/icons/note-favorite-white.svg"
@@ -218,6 +221,7 @@ export default function RecipeDetails() {
             role="tab"
             aria-controls="reviews"
             aria-selected="false"
+            onClick={() => handleTabClick("reviews")}
           >
             <img
               src="/assets/images/icons/star-white.svg"
@@ -231,99 +235,24 @@ export default function RecipeDetails() {
       </div>
     </div>
     <div id="default-tab-content">
+        {activeTab === "ingredients" &&(
       <div
-        className="hidden px-5"
+        className="px-5"
         id="ingredients"
         role="tabpanel"
         aria-labelledby="ingredients-tab"
       >
         <div className="grid grid-cols-2 gap-5">
-          <div className="flex flex-col items-center text-center w-full rounded-[20px] p-[14px] gap-[14px] bg-white shadow-[0_12px_30px_0_#D6D6D680]">
-            <div className="thumbnail flex shrink-0 w-full aspect-[138.5/100] rounded-[20px] bg-[#D9D9D9] overflow-hidden">
-              <img
-                src="/assets/images/thumbnails/thumbnails-ingredients-1.png"
-                className="w-full h-full object-cover"
-                alt="thumbnails"
-              />
-            </div>
-            <div className="flex flex-col gap-[2px]">
-              <p className="font-semibold">Big Meats</p>
-              <p className="text-sm leading-[21px] text-[#848486]">
-                1 kilogram
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center text-center w-full rounded-[20px] p-[14px] gap-[14px] bg-white shadow-[0_12px_30px_0_#D6D6D680]">
-            <div className="thumbnail flex shrink-0 w-full aspect-[138.5/100] rounded-[20px] bg-[#D9D9D9] overflow-hidden">
-              <img
-                src="/assets/images/thumbnails/thumbnails-ingredients-2.png"
-                className="w-full h-full object-cover"
-                alt="thumbnails"
-              />
-            </div>
-            <div className="flex flex-col gap-[2px]">
-              <p className="font-semibold">Pineapple</p>
-              <p className="text-sm leading-[21px] text-[#848486]">3 pcs</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center text-center w-full rounded-[20px] p-[14px] gap-[14px] bg-white shadow-[0_12px_30px_0_#D6D6D680]">
-            <div className="thumbnail flex shrink-0 w-full aspect-[138.5/100] rounded-[20px] bg-[#D9D9D9] overflow-hidden">
-              <img
-                src="/assets/images/thumbnails/thumbnails-ingredients-3.png"
-                className="w-full h-full object-cover"
-                alt="thumbnails"
-              />
-            </div>
-            <div className="flex flex-col gap-[2px]">
-              <p className="font-semibold">Flour Milk</p>
-              <p className="text-sm leading-[21px] text-[#848486]">50 ons</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center text-center w-full rounded-[20px] p-[14px] gap-[14px] bg-white shadow-[0_12px_30px_0_#D6D6D680]">
-            <div className="thumbnail flex shrink-0 w-full aspect-[138.5/100] rounded-[20px] bg-[#D9D9D9] overflow-hidden">
-              <img
-                src="/assets/images/thumbnails/thumbnails-ingredients-4.png"
-                className="w-full h-full object-cover"
-                alt="thumbnails"
-              />
-            </div>
-            <div className="flex flex-col gap-[2px]">
-              <p className="font-semibold">Pure Eggs</p>
-              <p className="text-sm leading-[21px] text-[#848486]">10 pcs</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center text-center w-full rounded-[20px] p-[14px] gap-[14px] bg-white shadow-[0_12px_30px_0_#D6D6D680]">
-            <div className="thumbnail flex shrink-0 w-full aspect-[138.5/100] rounded-[20px] bg-[#D9D9D9] overflow-hidden">
-              <img
-                src="/assets/images/thumbnails/thumbnails-ingredients-5.png"
-                className="w-full h-full object-cover"
-                alt="thumbnails"
-              />
-            </div>
-            <div className="flex flex-col gap-[2px]">
-              <p className="font-semibold">Angga’s Spices</p>
-              <p className="text-sm leading-[21px] text-[#848486]">
-                1 kilogram
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center text-center w-full rounded-[20px] p-[14px] gap-[14px] bg-white shadow-[0_12px_30px_0_#D6D6D680]">
-            <div className="thumbnail flex shrink-0 w-full aspect-[138.5/100] rounded-[20px] bg-[#D9D9D9] overflow-hidden">
-              <img
-                src="/assets/images/thumbnails/thumbnails-ingredients-6.png"
-                className="w-full h-full object-cover"
-                alt="thumbnails"
-              />
-            </div>
-            <div className="flex flex-col gap-[2px]">
-              <p className="font-semibold">Super Chilly</p>
-              <p className="text-sm leading-[21px] text-[#848486]">3 pcs</p>
-            </div>
-          </div>
+          <IngredientsCard></IngredientsCard>
+          <IngredientsCard></IngredientsCard>
+          <IngredientsCard></IngredientsCard>
         </div>
       </div>
+        )}
+
+        {activeTab === "tutorials" &&(
       <div
-        className="hidden px-5"
+        className="px-5"
         id="tutorials"
         role="tabpanel"
         aria-labelledby="tutorials-tab"
@@ -392,8 +321,11 @@ export default function RecipeDetails() {
           </div>
         </div>
       </div>
+        )}
+
+        {activeTab === "reviews" &&(
       <div
-        className="hidden px-5"
+        className="px-5"
         id="reviews"
         role="tabpanel"
         aria-labelledby="reviews-tab"
@@ -551,6 +483,8 @@ export default function RecipeDetails() {
           </div>
         </div>
       </div>
+        )}
+
     </div>
   </section>
   <div
