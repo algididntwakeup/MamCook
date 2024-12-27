@@ -1,8 +1,42 @@
+import { useParams } from "react-router-dom";
 import CategoryFeaturedRecipesWrapper from "../wrappers/CategoryFeaturedRecipesWrapper";
+import { useEffect, useState } from "react";
+import { Category } from "../types/type";
+import axios from "axios";
 
 export default function CategoryDetails() {
-    return (
-      
+    const { slug } = useParams <{ slug: string }>();
+    const [category, setCategory] = useState<Category | null>(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+
+    useEffect(() => {
+        axios
+        .get(`http://127.0.0.1:8000/api/categories/${slug}`)
+        .then((response) => {
+            setCategory(response.data.data);
+            setLoading(false);
+        })
+        .catch((error) => {
+            setError(error);
+            setLoading(false);
+        });
+    }, [slug]);
+
+    if (loading) {
+        return <p>Loading...</p>;
+    }
+
+    if (error) {
+        return <p>Error loading: {error}</p>;
+    }
+
+    if (!category) {
+        return <p>Category not found</p>;
+    }
+
+
+    return (    
 <>
   <nav className="absolute top-0 flex w-full max-w-[640px] items-center justify-between px-5 mt-[30px] z-20">
     <a href="index.html">
