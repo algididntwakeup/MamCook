@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import RecipeCardResult from "../components/RecipeCardResult";
 import { useEffect, useState } from "react";
 import { Category } from "../types/type";
@@ -49,9 +49,9 @@ export default function CategoryLatestRecipeWrapper() {
 
     { category.recipes.length > 0 ? (
         category.recipes.map((recipe) => (
-        <RecipeCardResult 
-        key={recipe.id}
-        recipe={recipe}></RecipeCardResult>
+            <Link to={`/recipe/${recipe.slug}`}  key={recipe.id} > 
+        <RecipeCardResult  recipe={recipe}></RecipeCardResult>
+        </Link>
     ))) : (
         <p>Belum ada data</p>
     )

@@ -3,7 +3,7 @@ import FeaturedRecipe from "../components/FeaturedRecipeCard";
 import { useEffect, useState } from "react";
 import { Category } from "../types/type";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function CategoryFeaturedRecipesWrapper() {
     const { slug } = useParams <{ slug: string }>();
@@ -60,7 +60,9 @@ export default function CategoryFeaturedRecipesWrapper() {
                 { category.recipes.length > 0 ? (
                 category.recipes.map((recipe) => (
                 <SwiperSlide key={recipe.id} className=" !w-fit">
+                    <Link to={`/recipe/${recipe.slug}`}>
                     <FeaturedRecipe recipe={recipe} />
+                    </Link>
                 </SwiperSlide>  
                 ))) : (<p>belum ada data</p>)
             }
