@@ -99,8 +99,11 @@ export default function CariDetails() {
      
       {searchResults.length > 0 ? (
           searchResults.map((recipe) => (
-      <RecipeCardResult key={recipe.id} recipe={recipe}></RecipeCardResult>
-          ))) : (<p>Belum ada resep</p>)
+      <RecipeCardResult 
+      key={recipe.id} 
+      recipe={recipe}></RecipeCardResult>
+          ))) : (
+          <p>Belum ada resep</p>)
 
 
         }   
