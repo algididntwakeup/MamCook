@@ -4,7 +4,11 @@
 
 Disusun Oleh :
 Muhammad Al Ghifari - 223040001
+<<<<<<< HEAD
 George frederik Pingak - 223040080
+=======
+George Frederik Pingak - 223040080
+>>>>>>> 165c88c68466131d329e0ac2cd11ffadc300c4ea
 Muhammad Alief Arrizal Effendi - 223040061
 Farid Maulana Suherman - 223040008
 
