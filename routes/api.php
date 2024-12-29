@@ -10,10 +10,11 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::get('/recipes/search', [SearchRecipeController::class, 'index']);
 
 Route::get('/category/{category:slug}', [CategoryController::class, 'show']);
 Route::apiResource('/categories', CategoryController::class);
 
-Route::get('/recipe/{recipe:slug}', [RecipeController::class, 'show']);
+route::get('/recipe/{recipe:slug}', [RecipeController::class, 'show']);
 Route::apiResource('/recipes', RecipeController::class);
+
+Route::get('/search-recipes', [SearchRecipeController::class, 'index']);
