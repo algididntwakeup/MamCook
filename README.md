@@ -3,10 +3,11 @@
 **MamCook** adalah platform untuk kelas resep membuat makanan yang dibangun menggunakan Laravel 11, Filament, React, Vite dan juga Typescript. Aplikasi ini memudahkan pengguna untuk mencari resep makanan, melihat detail, dan menonton tutorial melalui web ini.
 
 Disusun Oleh :
-Muhammad Al Ghifari - 223040001
-George Frederik Pingak - 223040080
-Muhammad Alief Arrizal Effendi - 223040061
-Farid Maulana Suherman - 223040008
+
+-   Muhammad Al Ghifari - 223040001
+-   George Frederik Pingak - 223040080
+-   Muhammad Alief Arrizal Effendi - 223040061
+-   Farid Maulana Suherman - 223040008
 
 ## Fitur
 
