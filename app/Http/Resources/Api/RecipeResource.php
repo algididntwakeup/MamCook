@@ -14,6 +14,19 @@ class RecipeResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            "id" => $this->id,
+            "name" => $this->name,
+            "slug" => $this->slug,
+            "url_file" => $this->url_file,
+            "url_video" => $this->url_video,
+            "thumbnail" => $this->thumbnail,
+            "about" => $this->about,
+            "category" => new CategoryResource($this->whenLoaded("category")),
+            "recipe_ingredients" => RecipeIngredientResource::collection($this->whenLoaded("recipeIngredients")),
+            "photos" => RecipePhotoResource::collection($this->whenLoaded("photos")),
+            "tutorials" => RecipeTutorialResource::collection($this->whenLoaded("tutorials")),
+            "author" => new RecipeAuthorResource($this->whenLoaded("author")),
+        ];
     }
 }

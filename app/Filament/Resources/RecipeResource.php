@@ -11,10 +11,10 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
-use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class RecipeResource extends Resource
 {
@@ -29,16 +29,13 @@ class RecipeResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-
                 Forms\Components\FileUpload::make('thumbnail')
                     ->image()
                     ->required(),
-
                 Forms\Components\Textarea::make('about')
                     ->required()
                     ->rows(10)
                     ->cols(20),
-
                 Forms\Components\Repeater::make('recipeIngredients')
                     ->relationship()
                     ->schema([
@@ -46,33 +43,28 @@ class RecipeResource extends Resource
                             ->relationship('ingredient', 'name')
                             ->required(),
                     ]),
-
                 Forms\Components\Repeater::make('photos')
                     ->relationship('photos')
                     ->schema([
                         Forms\Components\FileUpload::make('photo')
                             ->required(),
                     ]),
-
                 Forms\Components\Select::make('recipe_author_id')
                     ->relationship('author', 'name')
                     ->searchable()
                     ->preload()
                     ->required(),
-
                 Forms\Components\Select::make('category_id')
                     ->relationship('category', 'name')
                     ->searchable()
                     ->preload()
                     ->required(),
-
                 Forms\Components\TextInput::make('url_video')
                     ->required()
                     ->maxLength(255),
-
                 Forms\Components\FileUpload::make('url_file')
                     ->downloadable()
-                    ->uploadingMessage('Mengunggah Resep....')
+                    ->uploadingMessage('Uploading recipes...')
                     ->acceptedFileTypes(['application/pdf'])
                     ->required(),
             ]);
@@ -84,34 +76,31 @@ class RecipeResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
-
                 Tables\Columns\TextColumn::make('category.name')
                     ->searchable(),
-
-                ImageColumn::make('author.photo')
+                Tables\Columns\ImageColumn::make('author.photo')
                     ->circular(),
-
-                Tables\Columns\ImageColumn::make('thumbnail'),
+                Tables\Columns\ImageColumn::make('thumbnail')
+                    ->square(),
             ])
             ->filters([
                 SelectFilter::make('recipe_author_id')
                     ->label('Author')
                     ->relationship('author', 'name'),
-
                 SelectFilter::make('category_id')
                     ->label('Category')
                     ->relationship('category', 'name'),
-
                 SelectFilter::make('ingredient_id')
                     ->label('Ingredient')
                     ->options(Ingredient::pluck('name', 'id'))
                     ->query(function (Builder $query, array $data) {
                         if ($data['value']) {
-                            $query->whereHas('recipeIngredients', function ($query) use ($data) {
+                            $query->whereHas('recipeIngredients', function (Builder $query) use ($data) {
                                 $query->where('ingredient_id', $data['value']);
                             });
                         }
-                    }),
+                    })
+                    ->relationship('category', 'name')
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),

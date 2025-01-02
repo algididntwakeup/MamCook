@@ -10,22 +10,23 @@ use Illuminate\Support\Str;
 
 class Category extends Model
 {
-   use HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes;
 
-   protected $fillable = [
-    'name',
-    'slug',
-    'icon',
-   ];
+    protected $fillable = [
+        "name",
+        "slug",
+        "icon",
+    ];
 
-   public function setNameAttribute($value)
-   {
-    $this->attributes['name'] = $value;
-    $this->attributes['slug'] = Str::slug($value);
-   }
 
-   public function recipes(): HasMany
-   {
-    return $this->hasMany(Recipe::class);
-   }
+    public function setNameAttribute($value)
+    {
+        $this->attributes["name"] = $value;
+        $this->attributes["slug"] = Str::slug($value);
+    }
+
+    public function recipes(): HasMany
+    {
+        return $this->hasMany(Recipe::class);
+    }
 }

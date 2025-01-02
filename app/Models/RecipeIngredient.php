@@ -9,19 +9,19 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class RecipeIngredient extends Model
 {
-        use HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = [
-     'ingredient_id',
-     'recipe_id',
+        "recipe_id",
+        "ingredient_id",
     ];
-    public function ingredient(): BelongsTo
-    {
-        return $this->belongsTo(Ingredient::class, 'ingredient_id');
-    }
 
     public function recipe(): BelongsTo
     {
-        return $this->belongsTo(Recipe::class, 'recipe_id');
+        return $this->belongsTo(Recipe::class);
+    }
+    public function ingredient(): BelongsTo
+    {
+        return $this->belongsTo(Ingredient::class);
     }
 }

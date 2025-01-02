@@ -7,18 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-
 class Ingredient extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-     'name',
-     'photo',
+        "name",
+        "photo",
     ];
 
     public function recipeIngredients(): HasMany
     {
-     return $this->hasMany(RecipeIngredient::class,'ingredient_id');
+        return $this->hasMany(RecipeIngredient::class);
     }
 }
