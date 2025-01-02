@@ -2,21 +2,20 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\CategoryResource\Pages;
-use App\Filament\Resources\CategoryResource\RelationManagers;
-use App\Models\Category;
+use App\Filament\Resources\ApiKeyResource\Pages;
+use App\Filament\Resources\ApiKeyResource\RelationManagers;
+use App\Models\ApiKey;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Filament\Tables\Columns\ImageColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class CategoryResource extends Resource
+class ApiKeyResource extends Resource
 {
-    protected static ?string $model = Category::class;
+    protected static ?string $model = ApiKey::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -24,17 +23,12 @@ class CategoryResource extends Resource
     {
         return $form
             ->schema([
-                //
                 Forms\Components\TextInput::make('name')
-                ->helperText('Gunakan nama data dengan tepat')
-                ->required()
-                ->maxLength(255),
-
-                Forms\Components\FileUpload::make('icon')
-                ->disk('public') // Gunakan disk public
-                ->directory('icons') // Opsional: simpan file di folder icons
-                ->image()
-                ->required(),
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('key')
+                    ->required()
+                    ->maxLength(255),
             ]);
     }
 
@@ -42,12 +36,10 @@ class CategoryResource extends Resource
     {
         return $table
             ->columns([
-                //
                 Tables\Columns\TextColumn::make('name')
-                ->searchable(),
-
-                Tables\Columns\ImageColumn::make('photo')
-                ->square(),
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('key')
+                    ->searchable(),
             ])
             ->filters([
                 //
@@ -72,9 +64,9 @@ class CategoryResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListCategories::route('/'),
-            'create' => Pages\CreateCategory::route('/create'),
-            'edit' => Pages\EditCategory::route('/{record}/edit'),
+            'index' => Pages\ListApiKeys::route('/'),
+            'create' => Pages\CreateApiKey::route('/create'),
+            'edit' => Pages\EditApiKey::route('/{record}/edit'),
         ];
     }
 }
