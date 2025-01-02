@@ -4,6 +4,10 @@
 
 Disusun Oleh :
 Muhammad Al Ghifari - 223040001
+George Frederik Pingak - 223040080
+Muhammad Alief Arrizal Effendi - 223040061
+Farid Maulana Suherman - 223040008
+
 
 ## Fitur
 
