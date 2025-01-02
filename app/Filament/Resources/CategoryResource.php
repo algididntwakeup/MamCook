@@ -46,7 +46,8 @@ class CategoryResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                 ->searchable(),
 
-                Tables\Columns\ImageColumn::make('icon'),
+                Tables\Columns\ImageColumn::make('photo')
+                ->square(),
             ])
             ->filters([
                 //
