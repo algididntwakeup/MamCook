@@ -12,12 +12,12 @@ class RecipeAuthor extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-     'name',
-     'photo',
+        "name",
+        "photo",
     ];
 
-    public function recipes(): HasMany
+    public function recipe(): HasMany
     {
-     return $this->hasMany(Recipe::class);
+        return $this->hasMany(Recipe::class);
     }
 }

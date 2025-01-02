@@ -10,7 +10,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Filament\Tables\Columns\ImageColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -24,17 +23,12 @@ class RecipeAuthorResource extends Resource
     {
         return $form
             ->schema([
-                //
                 Forms\Components\TextInput::make('name')
-                ->helperText('Gunakan nama data dengan tepat')
-                ->required()
-                ->maxLength(255),
-
+                    ->required()
+                    ->maxLength(255),
                 Forms\Components\FileUpload::make('photo')
-                ->disk('public') // Gunakan disk public
-                ->directory('icons') // Opsional: simpan file di folder icons
-                ->image()
-                ->required(),
+                    ->image()
+                    ->required(),
             ]);
     }
 
@@ -42,12 +36,10 @@ class RecipeAuthorResource extends Resource
     {
         return $table
             ->columns([
-                //
                 Tables\Columns\TextColumn::make('name')
-                ->searchable(),
-
+                    ->searchable(),
                 Tables\Columns\ImageColumn::make('photo')
-                ->circular(),
+                    ->circular(),
             ])
             ->filters([
                 //

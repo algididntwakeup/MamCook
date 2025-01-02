@@ -7,18 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-
 class RecipePhoto extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-     'photo',
-     'recipe_id',
+        "recipe_id",
+        "photo",
     ];
 
     public function recipe(): BelongsTo
     {
-        return $this->belongsTo(Recipe::class, 'recipe_id');
+        return $this->belongsTo(Recipe::class);
     }
 }
